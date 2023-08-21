@@ -1,0 +1,17 @@
+.container {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.data {
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.entry {
+  border: 1px solid black;
+  padding: 1rem;
+}
