@@ -30,10 +30,8 @@ export class DataService {
     });
   }
 
-
   public allData$: WritableSignal<any> = signal([]);
   public isMobile$: WritableSignal<boolean> = signal(false);
-
 
   getDataFromCollection() {
     const col = collection(db, collectionName);
@@ -50,7 +48,6 @@ export class DataService {
     });
   }
 
-
   async addDocToCollection(data: any) {
     return await addDoc(collection(db, collectionName), data);
   }
@@ -60,12 +57,5 @@ export class DataService {
     return await deleteDoc(doc(db, collectionName, id));
 
   }
-
-
-
-
-
-
-
 
 }

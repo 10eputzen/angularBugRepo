@@ -1,7 +1,6 @@
 import { Component, effect } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DataService } from './data.service';
-import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +20,6 @@ export class AppComponent {
       console.log(this.allItems);
     });
     this.dataService.getDataFromCollection();
-
   }
 
   async mockData() {
