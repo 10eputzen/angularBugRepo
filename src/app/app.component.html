@@ -1,17 +1,1 @@
-<div class="container">
-  <div>
-    Data only appears if you add/remove documents or resize the screen due to the isMobile$ signal
-  </div>
-  <button (click)="mockData()">Add Mockdata to firestore</button>
-</div>
-
-<div class="data">
-  <div *ngFor="let item of allItems">
-    <div class="entry">
-      <h2>{{ item.name }}</h2>
-      <p>{{ item.description }}</p>
-      <button (click)="deleteData(item.id)">Delete Me</button>
-      <div></div>
-    </div>
-  </div>
-</div>
+<router-outlet></router-outlet>

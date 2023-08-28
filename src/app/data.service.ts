@@ -24,10 +24,6 @@ const db = getFirestore(app);
 export class DataService {
 
   constructor() {
-    const mediaQuery = window.matchMedia('(max-width: 800px)');
-    mediaQuery.addEventListener('change', (event) => {
-      this.isMobile$.set(event.matches);
-    });
   }
 
   public allData$: WritableSignal<any> = signal([]);
